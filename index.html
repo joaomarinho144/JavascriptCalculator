@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculadora</title>
+   
+</head>
+<body>
+    
+    <div id="background"><!-- Main background -->
+             
+        <div id="result"></div>
+             
+         <div id="main">
+             <div id="first-rows">
+              <button class="del-bg" id="delete" onclick="apagar()">Del</button>
+                 <button value="%" class="btn-style operator opera-bg fall-back" onclick="pegarsimbolo(this.value)">%</button>
+                 <button value="+" class="btn-style opera-bg value align operator" onclick="pegarsimbolo(this.value)">+</button>
+                 </div>
+                 
+               <div class="rows">
+             <button value="7" class="btn-style num-bg num first-child" onclick="pegarvalores(this.value)">7</button>
+                 <button value="8" class="btn-style num-bg num" onclick="pegarvalores(this.value)">8</button>
+                 <button value="9" class="btn-style num-bg num" onclick="pegarvalores(this.value)">9</button>
+                 <button value="-" class="btn-style opera-bg operator" onclick="pegarsimbolo(this.value)">-</button>
+                 </div>
+                 
+                 <div class="rows">
+                 <button value="4" class="btn-style num-bg num first-child" onclick="pegarvalores(this.value)">4</button>
+                 <button value="5" class="btn-style num-bg num" onclick="pegarvalores(this.value)">5</button>
+                 <button value="6" class="btn-style num-bg num" onclick="pegarvalores(this.value)">6</button>
+                 <button value="*" class="btn-style opera-bg operator" onclick="pegarsimbolo(this.value)">x</button>
+                 </div>
+                 
+                 <div class="rows">
+                 <button value="1" class="btn-style num-bg num first-child" onclick="pegarvalores(this.value)">1</button>
+                 <button value="2" class="btn-style num-bg num" onclick="pegarvalores(this.value)">2</button>
+                 <button value="3" class="btn-style num-bg num" onclick="pegarvalores(this.value)">3</button>
+                 <button value="/" class="btn-style opera-bg operator" onclick="pegarsimbolo(this.value)">/</button>
+                 </div>
+                 
+                 <div class="rows">
+                 <button value="0" class="num-bg zero" id="delete" onclick="pegarvalores(this.value)">0</button>
+                 <button value="." class="btn-style num-bg period fall-back" onclick="pegarvalores(this.value)">.</button>
+                 <button value="=" id="eqn-bg" class="eqn align" onclick="resultado()">=</button>
+                 </div>
+                
+             </div>
+         
+         </div>
+        
+    
+</body>
+</html>
+<script src="js/script.js"></script>
